@@ -130,11 +130,16 @@ Pull requests make full use of Git for its intended use as a Version Control Sys
 
    *Note:* If you don't commit existing changes then Git won't let you switch branches.
 
-5. Merge new code with master branch.
+5. (Optional) Check the master branch for the most recent repository and if necessary pull it.
+   **git checkout master**
+
+   **git pull**
+
+6. Merge new code with master branch.
 
    **git merge origin/[branch_name]**
 
-6. Push changes to the master branch
+7. Push changes to the master branch
 
    **git push origin master**
 
@@ -142,6 +147,7 @@ Pull requests make full use of Git for its intended use as a Version Control Sys
 
 ## Creating an SSH Key
 [SSH Keys](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 SSH Keys identify the user who's interacting with the Git remote repository.  Creating an SSH Key obviates the need to supply a password every time a change is made.  The GitHub Desktop app can also be used for this purpose, although it runs SSL by default.
 
 ---
