@@ -59,7 +59,8 @@ In order to use the Git Bash command prompt, create a clone of the new repositor
 
 3. Now enter, within the Windows Command Prompt:
 
-   **git clone URL**  where the URL is found on the webpage for the GitHub repository.
+   **git clone URL**  
+   where the URL is found on the webpage for the GitHub repository.
 
    The repository now exists in the location specified in step 2.
 
@@ -79,7 +80,7 @@ After making a change to the repository on your computer you'll need to push the
 
    **git add [-A or filename]**
 
-   if you add -A (capitalized) at the end of the line then all changes will be staged. e.g. **git add -a**.  Otherwise the file where changes have been made can specified by filename.
+   if you add -A (capitalized) at the end of the line then all changes will be staged. e.g. **git add -A**.  Otherwise the file where changes have been made can specified by filename.
 
 
 3. Commit changes
@@ -91,7 +92,7 @@ After making a change to the repository on your computer you'll need to push the
    if no comment string is provided then on the resultant prompt screen hit escape and enter in the command line **:wq**
 
 
-4. Push changes, i.e., syncs up with GitHub and promulgates changes there
+4. Push changes, i.e., syncs up with GitHub and promulgate changes there
 
    **git push**
 
@@ -110,12 +111,17 @@ Pull requests make full use of Git for its intended use as a Version Control Sys
 2. Specify an upstream branch for branch pushes.  This specified branch will be placed upstream of your branch.
 
    **git push --set-upstream origin [master, etc.]**
+
    or to unset the upstream branch:
+
    **git branch --unset-upstream [master, etc.]**
 
 3. Switch over to the new branch
+
    **git checkout [branch_name]**
+
    or
+
    **git checkout -b [branch_name]** would create the new branch and then immediately switch over to it.
 
 4. Make changes and then commit changes on your new branch.
@@ -125,9 +131,11 @@ Pull requests make full use of Git for its intended use as a Version Control Sys
    *Note:* If you don't commit existing changes then Git won't let you switch branches.
 
 5. Merge new code with master branch.
+
    **git merge origin/[branch_name]**
 
 6. Push changes to the master branch
+
    **git push origin master**
 
 ---
