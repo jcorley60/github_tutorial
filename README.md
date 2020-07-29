@@ -15,7 +15,7 @@
 | Command | Description |
 | :------ | :-----------|
 | git status | Compares your file versions with GitHub's in a detailed overview.
-| git add | Stages changes we've made.
+| git add | Stages changes made.
 | git commit -m "comment" | This commits changes that have been added/staged, where the comment is published.
 | git push | This syncs our committed changes with GitHub.
 | git pull | This pulls the latest version of the repository [branch] from GitHub.
@@ -33,7 +33,7 @@ However, Git Bash specifies which branch you're working within, which is a neces
 
 ---
 
-##WORKING WITH A NEW REPOSITORY [Windows]
+## WORKING WITH A NEW REPOSITORY [Windows]
 
 ### Repository Creation
 A repository can be created within GitHub and is straightforward with the user interface.
@@ -43,46 +43,51 @@ In order to use the Git Bash command prompt, create a clone of the new repositor
 
 1. Open and use the Windows command prompt:
 
-   *cmd*
+   **cmd**
+
 
 2. Navigate to the desired destination/folder on your computer for the repository
 
-   *cd*
+   **cd**
+
 
 3. Now enter within the Windows Command Prompt:
 
-   *git clone URL*  where the URL is found on the webpage for the GitHub repository.
+   **git clone URL**  where the URL is found on the webpage for the GitHub repository.
 
    The repository now exists in the location specified in step 2.
 
 ---
 
-##PUSHING CHANGES FROM YOUR COMPUTER TO GITHUB
+## PUSHING CHANGES FROM YOUR COMPUTER TO GITHUB
 After making a change to the repository on your computer you'll need to push the change to GitHub, i.e. sync up with <GitHub.com> to update changes.
 
 1. Check the status of the repository, i.e., view changes that have been made
 
-   *git status*
+   **git status**
+
 
 2. Stage the changes made
 
-   *git add*
+   **git add**
 
    if you add -A at the end of the line then all changes will be staged.
 
+
 3. Commit changes
 
-   *git commit -m "comment"*
+   **git commit -m "comment"**
 
    where the comment field is important because it's used to identify the overall change made
 
-   if no comment field is completed then on the resultant screen hit escape and enter in the command line *:wq*
+   if no comment field is completed then on the resultant screen hit escape and enter in the command line **:wq**
+   
 
 4. Push changes, i.e., sync up with GitHub and promulgate changes there
 
-   *git push*
+   **git push**
 
 ---
 
-##RECCOMENDATION
+## RECCOMENDATION
 Use a text editor which can interface with GitHub repositories, such as [Atom](atom.io).
